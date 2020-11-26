@@ -5,7 +5,7 @@ function resolve (pathUrl) {
 }
 
 module.exports = {
-  publicPath: '/',
+  publicPath: '/shopMall',
   configureWebpack: {
     resolve: {
       alias: {

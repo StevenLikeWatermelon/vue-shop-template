@@ -8,6 +8,19 @@
               <div class="search-input">
                 <div class="search-top">
                     <searchInput></searchInput>
+                    <div class="search-car">
+                        <div class="icon">
+                            <img src="@/assets/car.png" alt="car">
+                        </div>
+                        <div class="text">
+                            <span>我的购物车</span>
+                        </div>
+                        <div class="number">
+                            <div class="top">
+                                <span>99+</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="search-tips">
                     <span>自由光 胶片放映机 影院放映机 激光放映机</span>
@@ -68,6 +81,37 @@ export default {
             flex-direction: column;
             justify-content: space-between;
             padding-left: 40px;
+            .search-input {
+                .search-top {
+                    display: flex;
+                    align-items: center;
+                    .search-car {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 155px;
+                        height: 40px;
+                        background: #ffffff;
+                        border: 1px solid #E1E1E1;
+                        margin-left: 20px;
+                        .text {
+                            padding-left: 7px;
+                            padding-right: 2px;
+                            color: #FF5B22;
+                        }
+                        .number {
+                            height: 90%;
+                            .top {
+                                background: #FF5B22;
+                                border-radius: 3px;
+                                font-size: 10px;
+                                color: #ffffff;
+                                padding: 0 1px;
+                            }
+                        }
+                    }
+                }
+            }
             .search-tips {
                 font-size: 12px;
                 color: #999999;
