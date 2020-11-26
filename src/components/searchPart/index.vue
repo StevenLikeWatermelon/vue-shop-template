@@ -80,7 +80,7 @@ export default {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding-left: 40px;
+            padding-left: 135px;
             .search-input {
                 .search-top {
                     display: flex;
