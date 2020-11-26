@@ -4,6 +4,7 @@
     <search-part></search-part>
     <bread-crumbs :crumbs="breadCrumbs"></bread-crumbs>
     <searchPanel></searchPanel>
+    <productList></productList>
   </div>
 </template>
 
@@ -11,10 +12,12 @@
 import searchPart from '@/components/searchPart'
 import breadCrumbs from '@/components/breadCrumbs'
 import searchPanel from './components/searchPanel'
+import productList from './components/productList'
 export default {
   components: {
     searchPart,
     searchPanel,
+    productList,
     breadCrumbs
   },
   data () {

@@ -19,18 +19,20 @@
   margin: 0 auto;
   font-size: 14px;
   // hack element
-  .el-input__inner {
-    border-radius: 0;
-    border: 2px solid #FF5B22;
-    &:focus {
-      border-color: #FF5B22;
+  .search-input-wrapper {
+    .el-input__inner {
+      border-radius: 0;
+      border: 2px solid #FF5B22;
+      &:focus {
+        border-color: #FF5B22;
+      }
     }
-  }
-  .el-input-group__append {
-    background-color: #FF5B22;
-    border: 2px solid #FF5B22;
-    border-radius: 0;
-    padding: 0;
+    .el-input-group__append {
+      background-color: #FF5B22;
+      border: 2px solid #FF5B22;
+      border-radius: 0;
+      padding: 0;
+    }
   }
   .el-carousel {
     height: 100%;
