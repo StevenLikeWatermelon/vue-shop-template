@@ -21,12 +21,12 @@
             </el-carousel-item>
             <el-carousel-item>
                 <div class="img-carousel-item">
-                    <img src="@/assets/banner2.png" alt="banner2">
+                    <img src="@/assets/banner1.png" alt="banner2">
                 </div>
             </el-carousel-item>
             <el-carousel-item>
                 <div class="img-carousel-item">
-                    <img src="@/assets/banner3.png" alt="banner3">
+                    <img src="@/assets/banner1.png" alt="banner3">
                 </div>
             </el-carousel-item>
         </el-carousel>

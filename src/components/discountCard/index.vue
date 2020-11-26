@@ -6,7 +6,7 @@
       <div class="discount-card-center">
           <span>{{name}}</span>
       </div>
-      <div class="discount-card-bottom">
+      <div class="discount-card-bottom" :class="{'no-background': noBackground}">
           <div class="half left">
               <span>{{discountPrice}}</span>
           </div>
@@ -36,6 +36,10 @@ export default {
     hasLine: {
       type: Boolean,
       default: true
+    },
+    noBackground: {
+      type: Boolean,
+      default: false
     }
   }
 }
@@ -71,13 +75,27 @@ export default {
         position: relative;
         .half {
             width: 50%;
-            font-size:12px;
             &.left {
+                font-size: 14px;
                 color: #FFFFFF;
             }
             &.delete {
+                font-size:12px;
                 color: #999999;
                 text-decoration:line-through;
+            }
+        }
+        &.no-background {
+            background: transparent;
+            margin-top: -15px;
+            justify-content: center;
+            .half {
+                width: unset;
+                text-align: center;
+                &.left {
+                    color: #F30012;
+                    padding-right: 5px;
+                }
             }
         }
     }
