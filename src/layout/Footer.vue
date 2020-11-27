@@ -4,7 +4,7 @@
         <div class="content">
             <div class="info">
                 <!-- 客服和 置顶 -->
-                <top-and-server></top-and-server>
+                <top-and-server v-show="showTop"></top-and-server>
                 <div class="left info-detail">
                     <div class="title">
                         <span>联系方式</span>
@@ -114,6 +114,11 @@ import topAndServer from '@/components/topAndServer'
 export default {
   components: {
     topAndServer
+  },
+  computed: {
+    showTop () {
+      return !this.$route.meta.noTop
+    }
   }
 }
 </script>

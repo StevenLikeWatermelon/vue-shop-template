@@ -37,6 +37,23 @@
   .el-carousel {
     height: 100%;
   }
+  th {
+        div {
+            text-align: center;
+        }
+    }
+  td {
+      div {
+          text-align: center;
+      }
+  }
+  .el-radio__input.is-checked .el-radio__inner {
+    border-color: #FF5B22;
+    background: #FF5B22;
+  }
+  .el-radio__input.is-checked+.el-radio__label {
+    color: unset;
+  }
 }
 
 </style>

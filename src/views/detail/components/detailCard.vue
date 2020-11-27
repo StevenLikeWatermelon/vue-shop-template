@@ -44,14 +44,8 @@
                           <span>优惠券:</span>
                       </div>
                       <div class="coupon">
-                          <div class="coupon-img">
-                              <span class="coupon-img-title">￥ 5000</span>
-                              <span>满10000元可用</span>
-                          </div>
-                          <div class="coupon-img mg-lf-12">
-                              <span class="coupon-img-title">￥ 5000</span>
-                              <span>满10000元可用</span>
-                          </div>
+                          <coupon></coupon>
+                          <coupon class="mg-lf-12"></coupon>
                       </div>
                   </div>
               </div>
@@ -96,8 +90,11 @@
 </template>
 
 <script>
+import coupon from '@/components/coupon'
 export default {
-
+  components: {
+    coupon
+  }
 }
 </script>
 
@@ -199,23 +196,8 @@ export default {
                         display: flex;
                         margin-left: 18px;
                         margin-top: 20px;
-                        .coupon-img {
-                            height: 69px;
-                            width: 137px;
-                            background: url('../../../assets/coupon.png');
-                            background-size: 137px 69px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            flex-direction: column;
-                            font-size: 12px;
-                            color: #F5F5F5;
-                            &.mg-lf-12 {
-                                margin-left: 12px;
-                            }
-                            .coupon-img-title {
-                                font-size: 18px;
-                            }
+                        .mg-lf-12 {
+                            margin-left: 12px;
                         }
                     }
                 }
