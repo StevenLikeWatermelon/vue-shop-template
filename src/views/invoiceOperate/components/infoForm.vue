@@ -172,15 +172,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.mg-top-20 {
-  margin-top: 20px;
-}
-.mg-top-10 {
-  margin-top: 10px;
-}
-.mg-top-50 {
-  margin-top: 50px;
-}
 .orderList {
   text-align: left;
   width: 982px;

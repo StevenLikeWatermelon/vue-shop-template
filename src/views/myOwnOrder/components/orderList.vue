@@ -88,12 +88,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.mg-top-ne-1 {
-  margin-top: -1px;
-}
-.mg-top-20 {
-  margin-top: 20px;
-}
 .orderList {
   text-align: left;
   width: 982px;

@@ -85,5 +85,22 @@
     top: 11px;
     left: 360px;
   }
+  .simpleTable .text-2 .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+  }
+  .mg-top-ne-1 {
+    margin-top: -1px;
+  }
+  .mg-top-20 {
+    margin-top: 20px;
+  }
+  .mg-top-10 {
+    margin-top: 10px;
+  }
+  .mg-top-50 {
+    margin-top: 50px;
+  }
 }
 </style>
