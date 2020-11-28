@@ -280,16 +280,5 @@ export default {
     .el-input__inner {
         height: 26px;
     }
-    .el-pagination button,.el-pager li, .el-pagination button, .el-pagination span:not([class*=suffix]) {
-      height: 40px;
-      width: 40px;
-      line-height: 40px;
-    }
-    .el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
-      background-color: white;
-    }
-     .el-pagination.is-background .btn-prev:disabled, .el-pagination.is-background .btn-next:disabled {
-       background-color: #E0E0E0;
-     }
 }
 </style>

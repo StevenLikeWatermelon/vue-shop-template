@@ -260,9 +260,3 @@ export default {
   }
 }
 </style>
-
-<style lang="scss">
-.el-table th, .el-table tr.gray-bg {
-    background-color: #F5F5F5;
-}
-</style>
