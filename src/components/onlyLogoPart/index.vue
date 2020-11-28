@@ -6,7 +6,9 @@
                 <img src="@/assets/logo.png" alt="">
             </div>
             <div class="title-page">
-                <span>结算页</span>
+                <slot name="title">
+                    <span>结算页</span>
+                </slot>
             </div>
           </div>
           <div class="slot-div">
@@ -30,6 +32,7 @@ export default {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #FF5B22;
+    background-color: white;
     .content {
         width: 1226px;
         height: 100px;

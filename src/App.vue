@@ -78,6 +78,9 @@
   .el-table tr.gray-bg {
     background-color: #f5f5f5;
   }
+  .el-table .white-header th {
+    background-color: white;
+  }
   .el-form-item__label {
     color: #333333;
   }

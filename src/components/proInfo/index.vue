@@ -5,7 +5,7 @@
       </div>
       <div class="text">
           <span class="large">DP4K-36BLP- 2</span>
-          <span>荧光粉激光23米，支持银屏18</span>
+          <span>荧光粉激光23米，支持银屏18米</span>
       </div>
   </div>
 </template>

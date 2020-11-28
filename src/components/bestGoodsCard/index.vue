@@ -71,6 +71,7 @@ export default {
     }
     .special-card-tips {
       color: #999999;
+      padding-top: 10px;
     }
     .special-card-bottom {
         width: 90%;

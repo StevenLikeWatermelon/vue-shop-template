@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import proInfo from './proInfo'
+import proInfo from '@/components/proInfo'
 export default {
   components: {
     proInfo
