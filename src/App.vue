@@ -102,8 +102,31 @@
   .mg-top-10 {
     margin-top: 10px;
   }
+  .mg-top-30 {
+    margin-top: 30px;
+  }
   .mg-top-50 {
     margin-top: 50px;
   }
+  .el-dialog__body {
+    padding: 0;
+  }
+  .el-dialog__header {
+    text-align: left;
+  }
+}
+.modal-btn2 {
+    width: 140px;
+    height: 40px;
+    border: 1px solid #E1E1E1;
+    border-radius: 2px;
+    color: #333333;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    &.active {
+        background-color: #FF5B22;
+        color: white;
+    }
 }
 </style>
