@@ -4,16 +4,28 @@ import Frame from '@/layout/Frame.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
+export const routes = [
   {
     path: '/',
     name: 'frame',
-    redirect: '/home',
+    redirect: '/guide',
     component: Frame,
     children: [
       {
+        path: '/guide',
+        name: 'guide',
+        hiddden: true,
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import(/* webpackChunkName: "about" */ '@/views/guide/index.vue')
+      },
+      {
         path: '/home',
         name: 'home',
+        meta: {
+          title: '首页'
+        },
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
@@ -22,6 +34,9 @@ const routes = [
       {
         path: '/search',
         name: 'search',
+        meta: {
+          title: '搜索'
+        },
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
@@ -31,7 +46,8 @@ const routes = [
         path: '/detail',
         name: 'detail',
         meta: {
-          noTop: true
+          noTop: true,
+          title: '商品详情'
         },
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
@@ -42,7 +58,8 @@ const routes = [
         path: '/myOrder',
         name: 'myOrder',
         meta: {
-          noTop: true
+          noTop: true,
+          title: '订单详情'
         },
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
@@ -53,7 +70,8 @@ const routes = [
         path: '/orderSuccess',
         name: 'orderSuccess',
         meta: {
-          noTop: true
+          noTop: true,
+          title: '订单提交成功'
         },
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
@@ -64,7 +82,8 @@ const routes = [
         path: '/pay',
         name: 'pay',
         meta: {
-          noTop: true
+          noTop: true,
+          title: '结算单'
         },
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
@@ -75,7 +94,8 @@ const routes = [
         path: '/myOwnOrder',
         name: 'myOwnOrder',
         meta: {
-          noTop: true
+          noTop: true,
+          title: '我的订单'
         },
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
